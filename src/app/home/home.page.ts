@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {GetAllTodosFromJson} from '../../../DDD/application/GetAllTodosFromJson';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  todos:any[];
 
-  constructor() {}
+  constructor() {
+    const getAllTodos = new GetAllTodosFromJson();
+    const allTodos = getAllTodos.getAllTodos();
+    this.todos = allTodos;
+  }
 
 }

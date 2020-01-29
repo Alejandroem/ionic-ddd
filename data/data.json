@@ -1,0 +1,19 @@
+{
+  "todos": [{
+    "what": "Do laundry",
+    "done": false,
+    "steps": [{
+      "what": "Separate dirty close",
+      "done": false
+    },
+      {
+        "what": "Wash the cloaths",
+        "done": false
+      },
+      {
+        "what": "Dry the cloaths",
+        "done": false
+      }
+    ]
+  }]
+}
